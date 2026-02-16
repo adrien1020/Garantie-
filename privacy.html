@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Politique de confidentialité — Garantie+</title>
+  <meta name="description" content="Politique de confidentialité de Garantie+." />
+  <style>
+    :root{
+      --bg:#ffffff; --bg2:#f6f7fb;
+      --text:rgba(0,0,0,.92);
+      --muted:rgba(0,0,0,.68);
+      --muted2:rgba(0,0,0,.52);
+      --accent:#f5b301; --accent2:#ff8a00;
+      --radius:22px;
+      --shadow: 0 22px 60px rgba(0,0,0,.08);
+      --max: 860px;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "SF Pro Display","SF Pro Text", Segoe UI, Roboto, Helvetica, Arial;
+      color: var(--text);
+      background:
+        radial-gradient(1200px 680px at 50% -10%, rgba(245,179,1,.16), transparent 60%),
+        radial-gradient(900px 520px at 70% 0%, rgba(255,138,0,.12), transparent 55%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+    }
+    a{ color:inherit; text-decoration:none; }
+    .wrap{ max-width: var(--max); margin:0 auto; padding: 0 22px; }
+
+    .nav{
+      position: sticky; top:0; z-index: 50;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      background: rgba(255,255,255,.78);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .nav-inner{
+      height: 64px;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:650; letter-spacing:-.02em;
+    }
+    .brand-logo{
+      width: 28px; height: 28px; border-radius: 8px; object-fit: cover;
+      box-shadow: 0 6px 18px rgba(0,0,0,.12);
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 10px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(0,0,0,.08);
+      background: rgba(0,0,0,.04);
+      color: var(--text);
+      font-weight: 600;
+    }
+    .btn.primary{
+      border:0;
+      color:#fff;
+      background: linear-gradient(135deg, rgba(245,179,1,.95) 0%, rgba(255,138,0,.92) 100%);
+      box-shadow: 0 14px 34px rgba(245,179,1,.22);
+    }
+
+    header{ padding: 44px 0 18px; }
+    h1{
+      margin: 0;
+      font-size: clamp(28px, 3.2vw, 40px);
+      letter-spacing: -.03em;
+      line-height:1.1;
+    }
+    .sub{
+      margin: 10px 0 0;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 75ch;
+    }
+
+    .card{
+      margin: 18px 0;
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,.90) 0%, rgba(255,255,255,.70) 100%);
+      border: 1px solid rgba(0,0,0,.07);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    .badge{
+      display:inline-flex;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: rgba(0,0,0,.70);
+      background: rgba(0,0,0,.04);
+      border: 1px solid rgba(0,0,0,.08);
+      margin-bottom: 10px;
+    }
+    h2{
+      margin: 18px 0 8px;
+      font-size: 16px;
+      letter-spacing: -.015em;
+    }
+    p, li{
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 14px;
+    }
+    ul{ margin: 10px 0 0; padding-left: 18px; }
+    .muted{ color: var(--muted2); font-size: 13px; }
+
+    footer{
+      padding: 26px 0 40px;
+      color: var(--muted2);
+      font-size: 13px;
+      border-top: 1px solid rgba(0,0,0,.06);
+      margin-top: 22px;
+    }
+    .foot{
+      display:flex; gap:14px; justify-content:space-between; flex-wrap:wrap; align-items:center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="wrap">
+      <div class="nav-inner">
+        <div class="brand">
+          <img src="screens/icon.png" alt="Garantie+" class="brand-logo" />
+          <span>Garantie+</span>
+        </div>
+        <a class="btn" href="index.html">Retour au site</a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap">
+      <h1>Politique de confidentialité</h1>
+      <p class="sub">
+        Garantie+ est conçue pour fonctionner avec un maximum de confidentialité.
+        L’objectif : garder tes données sur ton appareil, et limiter toute collecte.
+      </p>
+      <p class="muted">Dernière mise à jour : <span id="d"></span></p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="card">
+      <div class="badge">Résumé</div>
+      <ul>
+        <li>Les informations que tu saisis (produits, dates, catégories) sont stockées localement.</li>
+        <li>Les photos (tickets/produits) restent sur ton appareil.</li>
+        <li>L’analyse des tickets est effectuée localement sur iPhone (aucun serveur).</li>
+        <li>Garantie+ ne vend pas tes données.</li>
+      </ul>
+
+      <h2>Données collectées</h2>
+      <p>
+        Garantie+ ne demande pas de compte et n’exige pas d’informations personnelles pour fonctionner.
+        Par défaut, nous ne collectons pas de données permettant de t’identifier.
+      </p>
+
+      <h2>Données stockées sur l’appareil</h2>
+      <p>
+        Les éléments créés dans l’app (produits, catégories, dates, montants) ainsi que les images associées
+        sont enregistrés localement sur ton iPhone.
+      </p>
+
+      <h2>Analyse des tickets</h2>
+      <p>
+        Lorsque tu utilises l’analyse de ticket, le traitement est réalisé sur l’appareil.
+        Nous ne transmettons pas ton ticket à un serveur externe pour l’analyser.
+      </p>
+
+      <h2>Services tiers</h2>
+      <p>
+        Certains services système Apple (App Store, StoreKit pour les pourboires, etc.) peuvent traiter des
+        informations conformément à leurs propres politiques. Nous n’avons pas accès aux informations de paiement.
+      </p>
+
+      <h2>Partage & impression</h2>
+      <p>
+        Si tu utilises la fonction de partage ou d’impression, iOS affiche une feuille de partage et peut transmettre
+        le document vers l’application ou l’imprimante que tu choisis.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Pour toute question : <a href="mailto:support@garantieplus.app">support@garantieplus.app</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="y"></span> Garantie+. Tous droits réservés.</div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="index.html">Site</a>
+        <a href="terms.html" onclick="return true;">Conditions</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noreferrer">EULA Apple</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const now = new Date();
+    document.getElementById("y").textContent = now.getFullYear();
+    document.getElementById("d").textContent = now.toLocaleDateString("fr-FR");
+  </script>
+</body>
+</html>
